@@ -398,7 +398,7 @@ header:not(.scrolled) {
 }
 
 /* --- HERO SECTION --- */
-#hero {
+#home {
     height: 100vh;
     display: flex;
     align-items: center;

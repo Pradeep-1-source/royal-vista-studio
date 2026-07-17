@@ -244,41 +244,56 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // Initial Hero Animation
         window.initHeroAnimations = function() {
-            gsap.from('#home .hero-agency-sub', {
+            gsap.fromTo('#home .hero-agency-sub', {
                 y: 30,
-                opacity: 0,
+                opacity: 0
+            }, {
+                y: 0,
+                opacity: 1,
                 duration: 1,
                 ease: 'power3.out'
             });
 
-            gsap.from('#home .hero-studio-title', {
+            gsap.fromTo('#home .hero-studio-title', {
                 scale: 0.94,
-                opacity: 0,
+                opacity: 0
+            }, {
+                scale: 1,
+                opacity: 1,
                 duration: 1.4,
                 delay: 0.2,
                 ease: 'power4.out'
             });
 
-            gsap.from('#home .hero-tagline', {
+            gsap.fromTo('#home .hero-tagline', {
                 y: 20,
-                opacity: 0,
+                opacity: 0
+            }, {
+                y: 0,
+                opacity: 1,
                 duration: 1,
                 delay: 0.4,
                 ease: 'power3.out'
             });
 
-            gsap.from('#home .hero-service-item', {
-                opacity: 0,
+            gsap.fromTo('#home .hero-service-item', {
                 y: 15,
+                opacity: 0
+            }, {
+                y: 0,
+                opacity: 1,
                 stagger: 0.1,
                 duration: 0.8,
                 delay: 0.6,
                 ease: 'power2.out'
             });
 
-            gsap.from('#home .hero-btn-container', {
+            gsap.fromTo('#home .hero-btn-container', {
                 y: 25,
-                opacity: 0,
+                opacity: 0
+            }, {
+                y: 0,
+                opacity: 1,
                 duration: 1,
                 delay: 0.9,
                 ease: 'power3.out'
@@ -288,14 +303,17 @@ document.addEventListener('DOMContentLoaded', () => {
         // Scroll reveals
         const revealsFadeUp = document.querySelectorAll('.reveal-fade-up');
         revealsFadeUp.forEach(el => {
-            gsap.from(el, {
+            gsap.fromTo(el, {
+                y: 45,
+                opacity: 0
+            }, {
                 scrollTrigger: {
                     trigger: el,
                     start: 'top 85%',
                     toggleActions: 'play none none none'
                 },
-                y: 45,
-                opacity: 0,
+                y: 0,
+                opacity: 1,
                 duration: 1.2,
                 ease: 'power3.out'
             });
@@ -303,14 +321,17 @@ document.addEventListener('DOMContentLoaded', () => {
 
         const revealsSlideLeft = document.querySelectorAll('.reveal-slide-left');
         revealsSlideLeft.forEach(el => {
-            gsap.from(el, {
+            gsap.fromTo(el, {
+                x: -60,
+                opacity: 0
+            }, {
                 scrollTrigger: {
                     trigger: el,
                     start: 'top 85%',
                     toggleActions: 'play none none none'
                 },
-                x: -60,
-                opacity: 0,
+                x: 0,
+                opacity: 1,
                 duration: 1.2,
                 ease: 'power3.out'
             });
@@ -318,14 +339,17 @@ document.addEventListener('DOMContentLoaded', () => {
 
         const revealsSlideRight = document.querySelectorAll('.reveal-slide-right');
         revealsSlideRight.forEach(el => {
-            gsap.from(el, {
+            gsap.fromTo(el, {
+                x: 60,
+                opacity: 0
+            }, {
                 scrollTrigger: {
                     trigger: el,
                     start: 'top 85%',
                     toggleActions: 'play none none none'
                 },
-                x: 60,
-                opacity: 0,
+                x: 0,
+                opacity: 1,
                 duration: 1.2,
                 ease: 'power3.out'
             });
@@ -333,14 +357,17 @@ document.addEventListener('DOMContentLoaded', () => {
 
         const revealsScale = document.querySelectorAll('.reveal-scale');
         revealsScale.forEach(el => {
-            gsap.from(el, {
+            gsap.fromTo(el, {
+                scale: 0.93,
+                opacity: 0
+            }, {
                 scrollTrigger: {
                     trigger: el,
                     start: 'top 85%',
                     toggleActions: 'play none none none'
                 },
-                scale: 0.93,
-                opacity: 0,
+                scale: 1,
+                opacity: 1,
                 duration: 1.2,
                 ease: 'power3.out'
             });
