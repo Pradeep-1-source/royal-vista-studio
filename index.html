@@ -1,0 +1,912 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Royal Vista Studio - Professional Video Editing, Motion Graphics, Color Grading, Commercial Ads & YouTube Editing. Crafting Cinematic Stories.">
+    <meta name="keywords" content="video editing, post production, creative agency, motion graphics, color grading, DaVinci Resolve, Premiere Pro, After Effects">
+    <meta name="author" content="Royal Vista Studio">
+    <title>Royal Vista Studio | Professional Creative Video Editing Agency</title>
+    
+    <!-- CSS Stylesheet -->
+    <link rel="stylesheet" href="index.css">
+    
+    <!-- FontAwesome for Premium Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Scroll Progress Bar -->
+    <div id="scroll-progress"></div>
+
+    <!-- Custom Cursor -->
+    <div class="custom-cursor" id="cursor-dot"></div>
+    <div class="custom-cursor-follower" id="cursor-follower"></div>
+
+    <!-- PRELOADER -->
+    <div id="preloader">
+        <div class="preloader-content">
+            <img src="assets/logo.jpg" alt="Royal Vista Studio Logo" class="preloader-logo">
+            <div class="preloader-bar-container">
+                <div class="preloader-bar"></div>
+            </div>
+            <h1 class="preloader-title">Royal Vista Studio</h1>
+        </div>
+    </div>
+
+    <!-- STICKY HEADER / NAVIGATION -->
+    <header id="main-header">
+        <div class="container nav-wrapper">
+            <a href="#home" class="nav-logo hover-target">
+                <img src="assets/logo.jpg" alt="RVS Logo" class="nav-logo-img">
+                <span class="nav-logo-text">ROYAL VISTA<span>.</span></span>
+            </a>
+            
+            <nav>
+                <ul class="nav-menu" id="nav-menu">
+                    <li><a href="#home" class="nav-link active hover-target">Home</a></li>
+                    <li><a href="#resume" class="nav-link hover-target">Resume</a></li>
+                    <li><a href="#services" class="nav-link hover-target">Services</a></li>
+                    <li><a href="#portfolio" class="nav-link hover-target">Portfolio</a></li>
+                    <li><a href="#experience" class="nav-link hover-target">Experience</a></li>
+                    <li><a href="#software" class="nav-link hover-target">Software</a></li>
+                    <li><a href="#reviews" class="nav-link hover-target">Reviews</a></li>
+                    <li><a href="#contact" class="nav-link hover-target">Contact</a></li>
+                </ul>
+            </nav>
+            
+            <button class="nav-toggle hover-target" id="nav-toggle" aria-label="Toggle Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section id="home">
+        <!-- Ambient elements -->
+        <div class="bg-ambient-glow"></div>
+        <div class="bg-ambient-glow-2"></div>
+        <div class="hero-mouse-glow" id="hero-glow"></div>
+        <div id="particles-container"></div>
+        
+        <div class="container hero-content">
+            <span class="hero-agency-sub reveal-fade-up">Creative Video Editing Studio</span>
+            <h1 class="hero-studio-title reveal-scale">ROYAL VISTA STUDIO</h1>
+            
+            <p class="hero-tagline reveal-fade-up">
+                Crafting Cinematic Stories Through Professional Editing.
+            </p>
+            
+            <div class="hero-services-list reveal-fade-up">
+                <span class="hero-service-item">Professional Video Editing</span>
+                <span class="hero-service-item">Motion Graphics</span>
+                <span class="hero-service-item">Color Grading</span>
+                <span class="hero-service-item">Commercial Ads</span>
+                <span class="hero-service-item">YouTube Editing</span>
+                <span class="hero-service-item">Luxury Brand Content</span>
+            </div>
+            
+            <div class="hero-btn-container reveal-fade-up">
+                <a href="#portfolio" class="btn-premium btn-gold hover-target magnetic-btn">
+                    <span>View Portfolio</span>
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+                <a href="#contact" class="btn-premium btn-outline hover-target magnetic-btn">
+                    <span>Hire Now</span>
+                    <i class="fa-regular fa-envelope"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- RESUME SECTION -->
+    <section id="resume">
+        <div class="container">
+            <div class="section-header reveal-fade-up">
+                <span class="section-badge">About the Agency</span>
+                <h2 class="section-title">Professional Resume</h2>
+            </div>
+            
+            <div class="resume-grid">
+                <!-- Left Side: Profile Card -->
+                <div class="resume-left reveal-slide-left">
+                    <div class="glass-card profile-card">
+                        <div class="profile-img-container">
+                            <img src="assets/profile.png" alt="Creative Video Director Workspace" class="profile-img">
+                        </div>
+                        <span class="section-badge experience-badge">4+ Years Experience</span>
+                        <h3 class="profile-title">Royal Vista Studio</h3>
+                        <p class="profile-subtitle">Creative Video Editing Agency</p>
+                        
+                        <div class="contact-list">
+                            <div class="contact-item">
+                                <i class="fa-solid fa-location-dot"></i>
+                                <span>Global Remote Post-Production</span>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fa-regular fa-envelope"></i>
+                                <span><a href="mailto:contact@royalvistastudio.com" class="hover-target">contact@royalvistastudio.com</a></span>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fa-brands fa-whatsapp"></i>
+                                <span><a href="https://wa.me/919999999999" target="_blank" class="hover-target">+91 99999 99999</a></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Right Side: Details & Skill Progress Bars -->
+                <div class="resume-right reveal-slide-right">
+                    <div class="glass-card resume-summary-box">
+                        <h3>Agency Profile</h3>
+                        <p class="resume-summary-text">
+                            Royal Vista Studio is a creative editing studio delivering high-quality post-production services for brands, businesses, creators and agencies.
+                        </p>
+                        <p class="resume-summary-text">
+                            Specialized in cinematic storytelling, commercial advertisements, YouTube videos, social media content, motion graphics, color grading and premium visual production.
+                        </p>
+                        <p class="resume-summary-text">
+                            Known for delivering visually stunning edits with exceptional quality, attention to detail and fast turnaround.
+                        </p>
+                    </div>
+                    
+                    <!-- SKILLS SECTION -->
+                    <div class="skills-container">
+                        <h3 class="skills-title">
+                            <i class="fa-solid fa-sliders"></i>
+                            <span>Core Expertise & Skills</span>
+                        </h3>
+                        
+                        <div class="skills-grid">
+                            <!-- Skill 1 -->
+                            <div class="skill-bar-wrapper">
+                                <div class="skill-info">
+                                    <span class="skill-name">Video Editing</span>
+                                    <span class="skill-percentage">95%</span>
+                                </div>
+                                <div class="skill-track">
+                                    <div class="skill-fill" data-percent="95%"></div>
+                                </div>
+                            </div>
+                            <!-- Skill 2 -->
+                            <div class="skill-bar-wrapper">
+                                <div class="skill-info">
+                                    <span class="skill-name">Adobe Premiere Pro</span>
+                                    <span class="skill-percentage">95%</span>
+                                </div>
+                                <div class="skill-track">
+                                    <div class="skill-fill" data-percent="95%"></div>
+                                </div>
+                            </div>
+                            <!-- Skill 3 -->
+                            <div class="skill-bar-wrapper">
+                                <div class="skill-info">
+                                    <span class="skill-name">Adobe After Effects</span>
+                                    <span class="skill-percentage">85%</span>
+                                </div>
+                                <div class="skill-track">
+                                    <div class="skill-fill" data-percent="85%"></div>
+                                </div>
+                            </div>
+                            <!-- Skill 4 -->
+                            <div class="skill-bar-wrapper">
+                                <div class="skill-info">
+                                    <span class="skill-name">Adobe Photoshop</span>
+                                    <span class="skill-percentage">95%</span>
+                                </div>
+                                <div class="skill-track">
+                                    <div class="skill-fill" data-percent="95%"></div>
+                                </div>
+                            </div>
+                            <!-- Skill 5 -->
+                            <div class="skill-bar-wrapper">
+                                <div class="skill-info">
+                                    <span class="skill-name">Adobe Illustrator</span>
+                                    <span class="skill-percentage">85%</span>
+                                </div>
+                                <div class="skill-track">
+                                    <div class="skill-fill" data-percent="85%"></div>
+                                </div>
+                            </div>
+                            <!-- Skill 6 -->
+                            <div class="skill-bar-wrapper">
+                                <div class="skill-info">
+                                    <span class="skill-name">Motion Graphics</span>
+                                    <span class="skill-percentage">85%</span>
+                                </div>
+                                <div class="skill-track">
+                                    <div class="skill-fill" data-percent="85%"></div>
+                                </div>
+                            </div>
+                            <!-- Skill 7 -->
+                            <div class="skill-bar-wrapper">
+                                <div class="skill-info">
+                                    <span class="skill-name">Color Grading</span>
+                                    <span class="skill-percentage">85%</span>
+                                </div>
+                                <div class="skill-track">
+                                    <div class="skill-fill" data-percent="85%"></div>
+                                </div>
+                            </div>
+                            <!-- Skill 8 -->
+                            <div class="skill-bar-wrapper">
+                                <div class="skill-info">
+                                    <span class="skill-name">Sound Design</span>
+                                    <span class="skill-percentage">80%</span>
+                                </div>
+                                <div class="skill-track">
+                                    <div class="skill-fill" data-percent="80%"></div>
+                                </div>
+                            </div>
+                            <!-- Skill 9 -->
+                            <div class="skill-bar-wrapper">
+                                <div class="skill-info">
+                                    <span class="skill-name">Branding</span>
+                                    <span class="skill-percentage">80%</span>
+                                </div>
+                                <div class="skill-track">
+                                    <div class="skill-fill" data-percent="80%"></div>
+                                </div>
+                            </div>
+                            <!-- Skill 10 -->
+                            <div class="skill-bar-wrapper">
+                                <div class="skill-info">
+                                    <span class="skill-name">UI Design</span>
+                                    <span class="skill-percentage">70%</span>
+                                </div>
+                                <div class="skill-track">
+                                    <div class="skill-fill" data-percent="70%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- STATISTICS SECTION -->
+    <section class="stats-section" id="statistics">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item reveal-fade-up">
+                    <span class="stat-number count" data-target="4">0</span><span class="stat-number">+</span>
+                    <p class="stat-label">Years Experience</p>
+                </div>
+                <div class="stat-item reveal-fade-up">
+                    <span class="stat-number count" data-target="500">0</span><span class="stat-number">+</span>
+                    <p class="stat-label">Projects Completed</p>
+                </div>
+                <div class="stat-item reveal-fade-up">
+                    <span class="stat-number count" data-target="100">0</span><span class="stat-number">+</span>
+                    <p class="stat-label">Happy Clients</p>
+                </div>
+                <div class="stat-item reveal-fade-up">
+                    <span class="stat-number count" data-target="100">0</span><span class="stat-number">%</span>
+                    <p class="stat-label">Client Satisfaction</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICES SECTION -->
+    <section id="services">
+        <div class="container">
+            <div class="section-header reveal-fade-up">
+                <span class="section-badge">What We Offer</span>
+                <h2 class="section-title">Luxury Post-Production Services</h2>
+            </div>
+            
+            <div class="services-grid">
+                <!-- Service 1 -->
+                <div class="glass-card service-card reveal-fade-up">
+                    <div class="service-icon-box"><i class="fa-solid fa-video"></i></div>
+                    <h3 class="service-card-title">Video Editing</h3>
+                    <p class="service-card-desc">High-end narrative flow, structural pacing, and seamless cuts tailored to captivate and keep audiences hooked.</p>
+                </div>
+                <!-- Service 2 -->
+                <div class="glass-card service-card reveal-fade-up">
+                    <div class="service-icon-box"><i class="fa-solid fa-bezier-curve"></i></div>
+                    <h3 class="service-card-title">Motion Graphics</h3>
+                    <p class="service-card-desc">Dynamic 2D and 3D kinetic typography, abstract backdrops, overlays, and transitions tailored for brand aesthetics.</p>
+                </div>
+                <!-- Service 3 -->
+                <div class="glass-card service-card reveal-fade-up">
+                    <div class="service-icon-box"><i class="fa-solid fa-palette"></i></div>
+                    <h3 class="service-card-title">Color Grading</h3>
+                    <p class="service-card-desc">Professional-grade color balancing, tone matching, and custom cinematic lookup tables for premium look and feel.</p>
+                </div>
+                <!-- Service 4 -->
+                <div class="glass-card service-card reveal-fade-up">
+                    <div class="service-icon-box"><i class="fa-solid fa-rectangle-ad"></i></div>
+                    <h3 class="service-card-title">Commercial Advertisements</h3>
+                    <p class="service-card-desc">High-conversion ad edits with snappy cuts, bold typography, and visual hooks designed for modern brands.</p>
+                </div>
+                <!-- Service 5 -->
+                <div class="glass-card service-card reveal-fade-up">
+                    <div class="service-icon-box"><i class="fa-solid fa-heart"></i></div>
+                    <h3 class="service-card-title">Wedding Films</h3>
+                    <p class="service-card-desc">Emotional, cinematic highlights and documentary wedding films rendered with rich color tones and smooth pacing.</p>
+                </div>
+                <!-- Service 6 -->
+                <div class="glass-card service-card reveal-fade-up">
+                    <div class="service-icon-box"><i class="fa-solid fa-building"></i></div>
+                    <h3 class="service-card-title">Corporate Videos</h3>
+                    <p class="service-card-desc">Clean, professional presentations, brand stories, internal communications, and interviews with visual class.</p>
+                </div>
+                <!-- Service 7 -->
+                <div class="glass-card service-card reveal-fade-up">
+                    <div class="service-icon-box"><i class="fa-solid fa-mobile-screen"></i></div>
+                    <h3 class="service-card-title">Social Media Reels</h3>
+                    <p class="service-card-desc">Fast-paced, vertically oriented edits for TikTok, Instagram Reels, and YouTube Shorts. Hook-driven structure.</p>
+                </div>
+                <!-- Service 8 -->
+                <div class="glass-card service-card reveal-fade-up">
+                    <div class="service-icon-box"><i class="fa-brands fa-youtube"></i></div>
+                    <h3 class="service-card-title">YouTube Editing</h3>
+                    <p class="service-card-desc">High retention layout edits for creators, involving sound design cues, popups, zooms, and interactive storytelling.</p>
+                </div>
+                <!-- Service 9 -->
+                <div class="glass-card service-card reveal-fade-up">
+                    <div class="service-icon-box"><i class="fa-solid fa-film"></i></div>
+                    <h3 class="service-card-title">Documentaries</h3>
+                    <p class="service-card-desc">Extended storytelling format pacing, deep sound design layering, and visual asset matching for long-form edits.</p>
+                </div>
+                <!-- Service 10 -->
+                <div class="glass-card service-card reveal-fade-up">
+                    <div class="service-icon-box"><i class="fa-solid fa-microphone-lines"></i></div>
+                    <h3 class="service-card-title">Podcast Editing</h3>
+                    <p class="service-card-desc">Multi-cam synchronization, clean audio balancing, noise reductions, and visual highlights export workflow.</p>
+                </div>
+                <!-- Service 11 -->
+                <div class="glass-card service-card reveal-fade-up">
+                    <div class="service-icon-box"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
+                    <h3 class="service-card-title">Visual Effects</h3>
+                    <p class="service-card-desc">Green screen compositing, object tracking, custom tracking marks removal, and subtle clean enhancements.</p>
+                </div>
+                <!-- Service 12 -->
+                <div class="glass-card service-card reveal-fade-up">
+                    <div class="service-icon-box"><i class="fa-solid fa-gem"></i></div>
+                    <h3 class="service-card-title">Luxury Brand Content</h3>
+                    <p class="service-card-desc">Elite styling, matte grading, high-fashion timing, and audio soundscapes tailored for luxury brands.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PORTFOLIO SECTION -->
+    <section id="portfolio">
+        <div class="container">
+            <div class="section-header reveal-fade-up">
+                <span class="section-badge">Our Work</span>
+                <h2 class="section-title">Premium Portfolio Grid</h2>
+            </div>
+            
+            <!-- Portfolio grid mapped in JS -->
+            <div class="portfolio-grid">
+                <!-- Card 1 -->
+                <div class="glass-card portfolio-card reveal-fade-up hover-target" data-project="3D model">
+                    <div class="portfolio-img-box">
+                        <img src="assets/project_3d.png" alt="3D Workstation Project" class="portfolio-thumbnail">
+                        <div class="portfolio-overlay"></div>
+                    </div>
+                    <div class="portfolio-details">
+                        <div class="portfolio-title-row">
+                            <h3 class="portfolio-title">3D Workstation Render</h3>
+                            <span class="portfolio-category-badge">3D Model</span>
+                        </div>
+                        <p class="portfolio-desc">High-fidelity details of a futuristic mechanical workstation, rendered in obsidian and reflective metallic materials.</p>
+                        <div class="portfolio-action-row">
+                            <span class="portfolio-link-btn hover-target">
+                                <span>View Project</span>
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Card 2 -->
+                <div class="glass-card portfolio-card reveal-fade-up hover-target" data-project="After Effect">
+                    <div class="portfolio-img-box">
+                        <img src="assets/project_ae.png" alt="After Effects Motion Graphics" class="portfolio-thumbnail">
+                        <div class="portfolio-overlay"></div>
+                    </div>
+                    <div class="portfolio-details">
+                        <div class="portfolio-title-row">
+                            <h3 class="portfolio-title">Motion Graphics Universe</h3>
+                            <span class="portfolio-category-badge">After Effect</span>
+                        </div>
+                        <p class="portfolio-desc">Stylized glowing particle lines and complex node networks flowing seamlessly in dynamic 3D graphic timelines.</p>
+                        <div class="portfolio-action-row">
+                            <span class="portfolio-link-btn hover-target">
+                                <span>View Project</span>
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Card 3 -->
+                <div class="glass-card portfolio-card reveal-fade-up hover-target" data-project="Home Theater">
+                    <div class="portfolio-img-box">
+                        <img src="assets/project_theater.png" alt="Luxury Home Theater Design" class="portfolio-thumbnail">
+                        <div class="portfolio-overlay"></div>
+                    </div>
+                    <div class="portfolio-details">
+                        <div class="portfolio-title-row">
+                            <h3 class="portfolio-title">Luxury Cinema Room</h3>
+                            <span class="portfolio-category-badge">Home Theater</span>
+                        </div>
+                        <p class="portfolio-desc">High-end architecture style home theater featuring custom acoustic panels, velvet seating, and warm ambient gold LEDs.</p>
+                        <div class="portfolio-action-row">
+                            <span class="portfolio-link-btn hover-target">
+                                <span>View Project</span>
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Card 4 -->
+                <div class="glass-card portfolio-card reveal-fade-up hover-target" data-project="Fashion">
+                    <div class="portfolio-img-box">
+                        <img src="assets/project_fashion.png" alt="Fashion Commercial Shoot" class="portfolio-thumbnail">
+                        <div class="portfolio-overlay"></div>
+                    </div>
+                    <div class="portfolio-details">
+                        <div class="portfolio-title-row">
+                            <h3 class="portfolio-title">Fashion Brand Shoot</h3>
+                            <span class="portfolio-category-badge">Fashion</span>
+                        </div>
+                        <p class="portfolio-desc">Cinematic studio lighting showcasing model wear, shot with professional gimbal stabilizers and rich dark color grading.</p>
+                        <div class="portfolio-action-row">
+                            <span class="portfolio-link-btn hover-target">
+                                <span>View Project</span>
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Card 5 -->
+                <div class="glass-card portfolio-card reveal-fade-up hover-target" data-project="Interior">
+                    <div class="portfolio-img-box">
+                        <img src="assets/project_interior.png" alt="Interior Architectural Render" class="portfolio-thumbnail">
+                        <div class="portfolio-overlay"></div>
+                    </div>
+                    <div class="portfolio-details">
+                        <div class="portfolio-title-row">
+                            <h3 class="portfolio-title">Modern Penthouse Vibe</h3>
+                            <span class="portfolio-category-badge">Interior</span>
+                        </div>
+                        <p class="portfolio-desc">Penthouse render emphasizing dark marble columns, floating stairs, minimal gold elements, and panoramic city night views.</p>
+                        <div class="portfolio-action-row">
+                            <span class="portfolio-link-btn hover-target">
+                                <span>View Project</span>
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Card 6 -->
+                <div class="glass-card portfolio-card reveal-fade-up hover-target" data-project="PC Build">
+                    <div class="portfolio-img-box">
+                        <img src="assets/project_pc.png" alt="Custom PC Build" class="portfolio-thumbnail">
+                        <div class="portfolio-overlay"></div>
+                    </div>
+                    <div class="portfolio-details">
+                        <div class="portfolio-title-row">
+                            <h3 class="portfolio-title">Water-Cooled Station</h3>
+                            <span class="portfolio-category-badge">PC Build</span>
+                        </div>
+                        <p class="portfolio-desc">Custom luxury PC rig featuring glowing gold coolant loops, dynamic lighting setup, and sleek glass chassis panels.</p>
+                        <div class="portfolio-action-row">
+                            <span class="portfolio-link-btn hover-target">
+                                <span>View Project</span>
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Card 7 -->
+                <div class="glass-card portfolio-card reveal-fade-up hover-target" data-project="Photoshop">
+                    <div class="portfolio-img-box">
+                        <img src="assets/project_ps.png" alt="Creative Photoshop Composition" class="portfolio-thumbnail">
+                        <div class="portfolio-overlay"></div>
+                    </div>
+                    <div class="portfolio-details">
+                        <div class="portfolio-title-row">
+                            <h3 class="portfolio-title">Surreal Space Canvas</h3>
+                            <span class="portfolio-category-badge">Photoshop</span>
+                        </div>
+                        <p class="portfolio-desc">Premium surreal digital composition of nebula dust, silhouettes, double exposures, and luxury layout elements.</p>
+                        <div class="portfolio-action-row">
+                            <span class="portfolio-link-btn hover-target">
+                                <span>View Project</span>
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Card 8 -->
+                <div class="glass-card portfolio-card reveal-fade-up hover-target" data-project="Videos">
+                    <div class="portfolio-img-box">
+                        <img src="assets/project_video.png" alt="Dual monitor editing setup" class="portfolio-thumbnail">
+                        <div class="portfolio-overlay"></div>
+                    </div>
+                    <div class="portfolio-details">
+                        <div class="portfolio-title-row">
+                            <h3 class="portfolio-title">Editorial Monitor Grid</h3>
+                            <span class="portfolio-category-badge">Videos</span>
+                        </div>
+                        <p class="portfolio-desc">Dual screen editing monitor showcasing timeline synchronization, timeline indicators, and real-time color grading.</p>
+                        <div class="portfolio-action-row">
+                            <span class="portfolio-link-btn hover-target">
+                                <span>View Project</span>
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- COMPLETE PORTFOLIO CTA -->
+            <div class="glass-card portfolio-cta reveal-scale">
+                <h3 class="portfolio-cta-title">Explore Our Entire Creative Universe</h3>
+                <p class="portfolio-cta-desc">
+                    Access our fully curated Google Drive folder to browse high-definition video files, raw project files, motion assets, and commercial catalogs.
+                </p>
+                <a href="#" class="btn-premium btn-gold hover-target magnetic-btn" id="complete-portfolio-btn">
+                    <span>View Complete Portfolio</span>
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- EXPERIENCE TIMELINE SECTION -->
+    <section id="experience">
+        <div class="container">
+            <div class="section-header reveal-fade-up">
+                <span class="section-badge">Our Journey</span>
+                <h2 class="section-title">Experience Timeline</h2>
+            </div>
+            
+            <div class="timeline-wrapper">
+                <div class="timeline-line"></div>
+                
+                <!-- Timeline Year 2022 -->
+                <div class="timeline-item reveal-fade-up">
+                    <div class="timeline-dot"></div>
+                    <div class="glass-card timeline-card">
+                        <div class="timeline-year">2022</div>
+                        <h3 class="timeline-title">Started Professional Editing Career</h3>
+                        <p class="timeline-desc">
+                            Launched independent post-production contracts, focusing on narrative pacing, color correction, and corporate video setups. Founded initial client base.
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- Timeline Year 2023 -->
+                <div class="timeline-item reveal-fade-up">
+                    <div class="timeline-dot"></div>
+                    <div class="glass-card timeline-card">
+                        <div class="timeline-year">2023</div>
+                        <h3 class="timeline-title">Worked with Multiple Brands</h3>
+                        <p class="timeline-desc">
+                            Scaled up operations to service international e-commerce and lifestyle brands. Integrated motion graphics workflow and dynamic ad-editing templates.
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- Timeline Year 2024 -->
+                <div class="timeline-item reveal-fade-up">
+                    <div class="timeline-dot"></div>
+                    <div class="glass-card timeline-card">
+                        <div class="timeline-year">2024</div>
+                        <h3 class="timeline-title">Commercial & Corporate Projects</h3>
+                        <p class="timeline-desc">
+                            Expanded creative services to feature high-budget television commercials, corporate event highlight reels, and premium visual art workflows.
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- Timeline Year 2025 -->
+                <div class="timeline-item reveal-fade-up">
+                    <div class="timeline-dot"></div>
+                    <div class="glass-card timeline-card">
+                        <div class="timeline-year">2025</div>
+                        <h3 class="timeline-title">Royal Vista Studio Expansion</h3>
+                        <p class="timeline-desc">
+                            Officially established Royal Vista Studio as a luxury-grade post-production agency. Added dedicated workflows for high-end YouTubers and social brands.
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- Timeline Year Present -->
+                <div class="timeline-item reveal-fade-up">
+                    <div class="timeline-dot"></div>
+                    <div class="glass-card timeline-card">
+                        <div class="timeline-year">Present</div>
+                        <h3 class="timeline-title">4+ Years Professional Experience</h3>
+                        <p class="timeline-desc">
+                            Delivering state-of-the-art visual post-production globally. Partnering with top-tier agencies to turn standard footage into cinematic masterpiece clips.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SOFTWARE SECTION -->
+    <section id="software" class="software-section">
+        <div class="container">
+            <div class="section-header reveal-fade-up">
+                <span class="section-badge">Industry Tools</span>
+                <h2 class="section-title">Production Software Ecosystem</h2>
+            </div>
+            
+            <div class="software-grid">
+                <!-- Premiere -->
+                <div class="glass-card software-card reveal-fade-up hover-target">
+                    <i class="fa-solid fa-hashtag"></i>
+                    <span class="software-name">Adobe Premiere Pro</span>
+                </div>
+                <!-- After Effects -->
+                <div class="glass-card software-card reveal-fade-up hover-target">
+                    <i class="fa-solid fa-shapes"></i>
+                    <span class="software-name">Adobe After Effects</span>
+                </div>
+                <!-- Photoshop -->
+                <div class="glass-card software-card reveal-fade-up hover-target">
+                    <i class="fa-solid fa-image"></i>
+                    <span class="software-name">Adobe Photoshop</span>
+                </div>
+                <!-- Illustrator -->
+                <div class="glass-card software-card reveal-fade-up hover-target">
+                    <i class="fa-solid fa-bezier-curve"></i>
+                    <span class="software-name">Adobe Illustrator</span>
+                </div>
+                <!-- DaVinci Resolve -->
+                <div class="glass-card software-card reveal-fade-up hover-target">
+                    <i class="fa-solid fa-palette"></i>
+                    <span class="software-name">DaVinci Resolve</span>
+                </div>
+                <!-- Adobe Audition -->
+                <div class="glass-card software-card reveal-fade-up hover-target">
+                    <i class="fa-solid fa-waveform"></i>
+                    <span class="software-name">Adobe Audition</span>
+                </div>
+                <!-- Media Encoder -->
+                <div class="glass-card software-card reveal-fade-up hover-target">
+                    <i class="fa-solid fa-arrow-right-arrow-left"></i>
+                    <span class="software-name">Media Encoder</span>
+                </div>
+                <!-- Blender -->
+                <div class="glass-card software-card reveal-fade-up hover-target">
+                    <i class="fa-solid fa-cube"></i>
+                    <span class="software-name">Blender 3D</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CLIENT REVIEWS SECTION -->
+    <section id="reviews" class="reviews-section">
+        <div class="container">
+            <div class="section-header reveal-fade-up">
+                <span class="section-badge">Client Testimonials</span>
+                <h2 class="section-title">Client Reviews</h2>
+            </div>
+            
+            <div class="reviews-grid">
+                <!-- Review 1 -->
+                <div class="glass-card review-card reveal-fade-up">
+                    <div class="review-stars">★★★★★</div>
+                    <h3 class="review-client-name">Professional Quality</h3>
+                    <p class="review-text">
+                        "Royal Vista Studio elevated our product campaign commercials to a completely new standard. Their understanding of pacing, matte colors, and visual hooks is truly exceptional."
+                    </p>
+                    <div class="review-footer">
+                        <div class="review-avatar">A</div>
+                        <div class="review-client-info">
+                            <span class="review-client-name">Arthur Pendelton</span>
+                            <span class="review-client-company">Vanguard Apparel</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Review 2 -->
+                <div class="glass-card review-card reveal-fade-up">
+                    <div class="review-stars">★★★★★</div>
+                    <h3 class="review-client-name">Fast Delivery</h3>
+                    <p class="review-text">
+                        "Unbelievable turnaround speed without compromising details. We needed 15 vertical short edits within 48 hours, and they delivered spectacular master files with dynamic transitions."
+                    </p>
+                    <div class="review-footer">
+                        <div class="review-avatar">S</div>
+                        <div class="review-client-info">
+                            <span class="review-client-name">Sarah Jenkins</span>
+                            <span class="review-client-company">Pulse Social Media</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Review 3 -->
+                <div class="glass-card review-card reveal-fade-up">
+                    <div class="review-stars">★★★★★</div>
+                    <h3 class="review-client-name">Outstanding Creativity</h3>
+                    <p class="review-text">
+                        "Highly Recommended! They took our raw documentary fragments and wove them into an emotionally charged masterpiece story. The audio soundscaping was flawless."
+                    </p>
+                    <div class="review-footer">
+                        <div class="review-avatar">M</div>
+                        <div class="review-client-info">
+                            <span class="review-client-name">Marcus Vance</span>
+                            <span class="review-client-company">Atlas Productions</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- WORKFLOW SECTION -->
+    <section id="workflow">
+        <div class="container">
+            <div class="section-header reveal-fade-up">
+                <span class="section-badge">How We Work</span>
+                <h2 class="section-title">Production Workflow</h2>
+            </div>
+            
+            <div class="workflow-grid">
+                <!-- Step 1 -->
+                <div class="glass-card workflow-card reveal-fade-up">
+                    <div class="workflow-step">01</div>
+                    <h3 class="workflow-title">Planning</h3>
+                    <p class="workflow-desc">Understanding campaign objectives, storyboarding visual structure, and lining up assets.</p>
+                </div>
+                
+                <!-- Step 2 -->
+                <div class="glass-card workflow-card reveal-fade-up">
+                    <div class="workflow-step">02</div>
+                    <h3 class="workflow-title">Editing</h3>
+                    <p class="workflow-desc">Constructing timelines, blending scenes, applying dynamic audio overlays, and color rendering.</p>
+                </div>
+                
+                <!-- Step 3 -->
+                <div class="glass-card workflow-card reveal-fade-up">
+                    <div class="workflow-step">03</div>
+                    <h3 class="workflow-title">Review</h3>
+                    <p class="workflow-desc">Iterative styling adjustments with clients via frame-accurate collaborative tools for perfection.</p>
+                </div>
+                
+                <!-- Step 4 -->
+                <div class="glass-card workflow-card reveal-fade-up">
+                    <div class="workflow-step">04</div>
+                    <h3 class="workflow-title">Delivery</h3>
+                    <p class="workflow-desc">Exporting industry-optimized ProRes formats and customized social file types ready for deploy.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="section-header reveal-fade-up">
+                <span class="section-badge">Get In Touch</span>
+                <h2 class="section-title">Start Your Cinematic Project</h2>
+            </div>
+            
+            <div class="glass-card contact-card-main reveal-scale">
+                <div class="contact-card-content">
+                    <div class="contact-left">
+                        <h3>Let's create something legendary.</h3>
+                        <p>Have an upcoming campaign, YouTube build, or custom motion project? Reach out to lock in scheduling.</p>
+                        
+                        <div class="contact-methods">
+                            <!-- Method Email -->
+                            <div class="contact-method-item">
+                                <div class="contact-method-icon"><i class="fa-regular fa-envelope"></i></div>
+                                <div class="contact-method-details">
+                                    <span class="contact-method-label">Email Us</span>
+                                    <span class="contact-method-value">
+                                        <a href="mailto:contact@royalvistastudio.com" class="hover-target">contact@royalvistastudio.com</a>
+                                    </span>
+                                </div>
+                            </div>
+                            
+                            <!-- Method WhatsApp -->
+                            <div class="contact-method-item">
+                                <div class="contact-method-icon"><i class="fa-brands fa-whatsapp"></i></div>
+                                <div class="contact-method-details">
+                                    <span class="contact-method-label">WhatsApp</span>
+                                    <span class="contact-method-value">
+                                        <a href="https://wa.me/919999999999" target="_blank" class="hover-target">+91 99999 99999</a>
+                                    </span>
+                                </div>
+                            </div>
+                            
+                            <!-- Method Instagram -->
+                            <div class="contact-method-item">
+                                <div class="contact-method-icon"><i class="fa-brands fa-instagram"></i></div>
+                                <div class="contact-method-details">
+                                    <span class="contact-method-label">Instagram</span>
+                                    <span class="contact-method-value">
+                                        <a href="https://instagram.com/royalvistastudio" target="_blank" class="hover-target">@royalvistastudio</a>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Social Icons Row -->
+                        <div class="contact-social-row">
+                            <a href="mailto:contact@royalvistastudio.com" class="social-circle-btn hover-target" aria-label="Email"><i class="fa-regular fa-envelope"></i></a>
+                            <a href="https://wa.me/919999999999" target="_blank" class="social-circle-btn hover-target" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+                            <a href="https://instagram.com/royalvistastudio" target="_blank" class="social-circle-btn hover-target" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-right">
+                        <form class="contact-form" onsubmit="event.preventDefault(); alert('Message sent successfully!');">
+                            <div class="form-group">
+                                <label for="form-name" class="form-label">Full Name</label>
+                                <input type="text" id="form-name" class="form-input hover-target" placeholder="Enter your name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="form-email" class="form-label">Email Address</label>
+                                <input type="email" id="form-email" class="form-input hover-target" placeholder="Enter your email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="form-message" class="form-label">Project Details</label>
+                                <textarea id="form-message" class="form-input hover-target" placeholder="Describe your editing project..." required></textarea>
+                            </div>
+                            <button type="submit" class="btn-premium btn-gold hover-target magnetic-btn" id="contact-submit-btn">
+                                <span>Hire Now</span>
+                                <i class="fa-regular fa-paper-plane"></i>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-logo-side">
+                    <a href="#home" class="nav-logo hover-target">
+                        <img src="assets/logo.jpg" alt="RVS Logo" class="nav-logo-img">
+                        <span class="nav-logo-text">ROYAL VISTA<span>.</span></span>
+                    </a>
+                    <p class="footer-studio-info">Crafting Cinematic Stories Through Professional Editing.</p>
+                </div>
+                
+                <a href="#home" class="back-to-top-btn hover-target" id="back-to-top" aria-label="Back To Top">
+                    <i class="fa-solid fa-arrow-up"></i>
+                </a>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 Royal Vista Studio. All rights reserved.</p>
+                <p>Designed with luxury aesthetic code for creative minds.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- GSAP CDN Libraries -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    
+    <!-- Interaction Logic -->
+    <script src="index.js"></script>
+</body>
+</html>
